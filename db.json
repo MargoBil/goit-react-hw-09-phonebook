@@ -1,0 +1,17 @@
+{
+  "contacts": [
+    {
+      "name": "frfe",
+      "number": "",
+      "id": 1
+    },
+    {
+      "name": "Masha",
+      "number": "",
+      "id": 2
+    }
+  ],
+  "theme": {
+    "themeColor": "Light"
+  }
+}
