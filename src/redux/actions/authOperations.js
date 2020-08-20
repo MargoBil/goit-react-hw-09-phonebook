@@ -1,7 +1,7 @@
 import * as actions from "./index";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://lpj-tasker.herokuapp.com";
+axios.defaults.baseURL = "https://goit-phonebook-api.herokuapp.com";
 
 const token = {
   set(token) {

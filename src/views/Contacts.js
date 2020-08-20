@@ -6,9 +6,15 @@ import ContactList from "../components/ContactList/ContactList";
 import Section from "../components/Section/Section";
 import Filter from "../components/Filter/Filter";
 import operations from "../redux/actions/operations";
+import authSelectors from "../redux/selectors/authSelectors";
+
 
 class Contacts extends Component {
   componentDidMount() {
+    // if (!this.props.isAuthenticated) {
+    //   this.props.history.replace(routes.signInPage.path);
+    //   return;
+    // }
     this.props.onFetchContacts();
   }
 
@@ -33,6 +39,7 @@ class Contacts extends Component {
 }
 const mapStateToProps = (state) => ({
   ...state,
+  isAuthenticated: authSelectors.isAuthenticated(state),
 });
 
 const mapDispatchToProps = {

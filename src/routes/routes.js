@@ -24,6 +24,7 @@ const signInPage = {
   component: lazy(() =>
     import("../views/SignIn" /* webpackChunkName: "SignInPage" */)
   ),
+  restricted: true
 };
 
 export default { contactsPage, signUpPage, signInPage };

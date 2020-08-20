@@ -7,11 +7,11 @@ import Wrapper from "./Wrapper/Wrapper";
 import Navigation from "../components/Navigation/Navigation";
 import routes from '../routes/routes';
 import authOperations from '../redux/actions/authOperations';
+import PrivatRoute from '../components/Routes/PrivatRoute';
 
 
 class App extends Component {
   componentDidMount() {
-    // this.props.onFetchNamesToProps();
     this.props.onGetCurrentUser();
     // this.props.onFetchThemeToProps();
   }
@@ -24,6 +24,10 @@ class App extends Component {
        
         <Suspense fallback={<div></div>}>
           <Switch>
+            {/* <PrivatRoute {...contactsPage}/>
+            <PublicRoute {...signUpPage}/>
+            <PublicRoute {...signInPage}/> */}
+            <PrivatRoute {...contactsPage}/>
             <Route {...contactsPage}/>
             <Route {...signUpPage}/>
             <Route {...signInPage}/>
@@ -37,7 +41,6 @@ class App extends Component {
 }
 
 const mapDispatchToProps = {
-  // onFetchNamesToProps: operations.fetchNames,
   // onFetchThemeToProps: operations.fetchTheme,
   onGetCurrentUser: authOperations.getCurrentUser
 };
