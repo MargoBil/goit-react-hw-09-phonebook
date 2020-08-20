@@ -4,13 +4,13 @@ import axios from "axios";
 axios.defaults.baseURL = "https://lpj-tasker.herokuapp.com";
 
 const token = {
-    set(token) {
-      axios.defaults.headers.common.Authorization = `Bearer ${token}`;
-    },
-    unset() {
-      axios.defaults.headers.common.Authorization = '';
-    },
-  };
+  set(token) {
+    axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+  },
+  unset() {
+    axios.defaults.headers.common.Authorization = "";
+  },
+};
 
 //auth operations
 const logUp = (credentials) => async (dispatch) => {
@@ -38,7 +38,7 @@ const logOut = () => async (dispatch) => {
     dispatch(actions.logoutRequest());
     await axios.post("/users/logout");
     token.unset();
-    
+
     dispatch(actions.logoutSuccess());
   } catch (error) {
     dispatch(actions.logoutFailure(error));
@@ -46,14 +46,16 @@ const logOut = () => async (dispatch) => {
 };
 const getCurrentUser = () => async (dispatch, getState) => {
   try {
-    const {auth:{token: persistedToken}} = getState();
-    if(!persistedToken) {
+    const {
+      auth: { token: persistedToken },
+    } = getState();
+    if (!persistedToken) {
       return;
     }
     token.set(persistedToken);
-    const {data} = await axios.get ("/users/current");
+    dispatch(actions.getCurrentUserRequest());
+    const { data } = await axios.get("/users/current");
     dispatch(actions.getCurrentUserSuccess(data));
-
   } catch (error) {
     dispatch(actions.getCurrentUserFailure(error));
   }
@@ -62,5 +64,5 @@ export default {
   logUp,
   logIn,
   logOut,
-  getCurrentUser
+  getCurrentUser,
 };

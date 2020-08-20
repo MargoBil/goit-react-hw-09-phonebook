@@ -1,14 +1,15 @@
 import * as actions from "./index";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:2000/";
-
 //contacts operations
-const addName = ({ name, number }) => async (dispatch) => {
+const addName = ({name, number}) => async (dispatch) => {
   try {
     dispatch(actions.addNameRequest());
-    const { data } = await axios.post("/contacts", { name, number });
-    dispatch(actions.addNameSuccess(data));
+     
+    const response = await axios.post("/contacts",  {name, number});
+    console.log(response);
+
+    // dispatch(actions.addNameSuccess(data));
   } catch (error) {
     dispatch(actions.addNameFailure(error));
   }
@@ -48,8 +49,8 @@ const toggleTheme = (themeColor) => async (dispatch) => {
 const fetchTheme = () => async (dispatch) => {
   try {
     dispatch(actions.fetchThemeRequest());
-    const { data } = await axios.get("/theme");
-    dispatch(actions.fetchThemeSuccess(data.themeColor));
+    // const { data } = await axios.get("/theme");
+    // dispatch(actions.fetchThemeSuccess(data.themeColor));
   } catch (error) {
     dispatch(actions.fetchThemeFailure(error));
   }

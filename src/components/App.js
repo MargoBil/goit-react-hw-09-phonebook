@@ -6,12 +6,13 @@ import ThemeButton from "./ThemeButton/ThemeButton";
 import Wrapper from "./Wrapper/Wrapper";
 import Navigation from "../components/Navigation/Navigation";
 import routes from '../routes/routes';
-import operations from "../redux/actions/operations";
+import authOperations from '../redux/actions/authOperations';
 
 
 class App extends Component {
   componentDidMount() {
     // this.props.onFetchNamesToProps();
+    this.props.onGetCurrentUser();
     // this.props.onFetchThemeToProps();
   }
 
@@ -36,8 +37,9 @@ class App extends Component {
 }
 
 const mapDispatchToProps = {
-  onFetchNamesToProps: operations.fetchNames,
-  onFetchThemeToProps: operations.fetchTheme,
+  // onFetchNamesToProps: operations.fetchNames,
+  // onFetchThemeToProps: operations.fetchTheme,
+  onGetCurrentUser: authOperations.getCurrentUser
 };
 
 export default connect(null, mapDispatchToProps)(App);
