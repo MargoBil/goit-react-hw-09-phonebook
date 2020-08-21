@@ -13,9 +13,6 @@ export const CHANGE_FILTER = 'name/filter';
 export const TOGGLE_THEME_REQUEST = "theme/toggleRequest";
 export const TOGGLE_THEME_SUCCESS = "theme/toggleSuccess";
 export const TOGGLE_THEME_FAILURE = "theme/toggleFailure";
-export const FETCH_THEME_REQUEST = "theme/fetchRequest";
-export const FETCH_THEME_SUCCESS = "theme/fetchSuccess";
-export const FETCH_THEME_FAILURE = "theme/fetchFailure";
 //auth actions
 export const LOGUP_REQUEST = "auth/logupRequest";
 export const LOGUP_SUCCESS = "auth/logupSuccess";

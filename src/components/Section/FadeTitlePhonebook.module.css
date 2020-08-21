@@ -1,8 +1,0 @@
-.appear {
-    transform: translateX(-300%);
-}
-
-.appearActive {
-    transform: translateX(0);
-    transition: transform 500ms linear;
-}

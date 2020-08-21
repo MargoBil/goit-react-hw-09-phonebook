@@ -72,7 +72,7 @@ class ContactForm extends Component {
           />
         </label>
         <button className={s[`btnForm${themeColor}`]} type="submit">
-          Add contact
+          ADD CONTACT
         </button>
       </form>
       </>

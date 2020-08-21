@@ -16,6 +16,7 @@ const signUpPage = {
   component: lazy(() =>
     import("../views/SignUp" /* webpackChunkName: "SignUpPage" */)
   ),
+  restricted: false
 };
 const signInPage = {
   path: "/signInView",

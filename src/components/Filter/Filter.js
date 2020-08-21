@@ -11,8 +11,8 @@ const Filter = ({value, theme, onChange}) => {
   return (
     <div className={s.box}>
       <label className={s[`label${theme}`]}>
-        Find contacts by name
-        <input value={value} onChange={({target}) => onChange(target.value)} />
+        Find contacts by name ...
+        <input className={s.input} value={value} onChange={({target}) => onChange(target.value)} />
       </label>
     </div>
   );

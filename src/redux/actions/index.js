@@ -21,10 +21,6 @@ export const toggleThemeRequest = createAction(actions.TOGGLE_THEME_REQUEST);
 export const toggleThemeSuccess = createAction(actions.TOGGLE_THEME_SUCCESS);
 export const toggleThemeFailure = createAction(actions.TOGGLE_THEME_FAILURE);
 
-export const fetchThemeRequest = createAction(actions.FETCH_THEME_REQUEST);
-export const fetchThemeSuccess = createAction(actions.FETCH_THEME_SUCCESS);
-export const fetchThemeFailure = createAction(actions.FETCH_THEME_FAILURE);
-
 //auth action creator 
 export const logupRequest = createAction(actions.LOGUP_REQUEST);
 export const logupSuccess = createAction(actions.LOGUP_SUCCESS);

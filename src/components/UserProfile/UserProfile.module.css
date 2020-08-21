@@ -1,0 +1,43 @@
+.textLight {
+    font-size: 17px;
+    color: #404042;
+    font-weight: 600;
+    font-style: italic;
+}
+.textDark {
+    composes: textLight;
+    color: #f5f5f5;
+}
+
+.btnBox {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btnLight {
+    border: none;
+    background-color: #a9e7f7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.78);
+    border-radius: 8px 8px 8px 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    outline: none;
+}
+
+.btnDark {
+    composes: btnLight;
+    background-color: #0f6a86;
+    color: #f5f5f5;
+}

@@ -1,9 +1,24 @@
 .box {
- display: flex;
- width: 300px;
- font-size: 10px;
- font-weight: 200;
- justify-content: space-around;
- align-items: center;
- color: gray;
+    display: flex;
+    font-size: 10px;
+    font-weight: 200;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+}
+
+.linkLight {
+    text-decoration: none;
+    font-size: 12px;
+    color: #363638;
+    margin-right: 15px;
+}
+
+.linkDark {
+    composes: linkLight;
+    color: #f5f5f5;
+}
+
+.active {
+    color: red;
 }

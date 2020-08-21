@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import routes from "../routes/routes";
+import routes from "../../routes/routes";
 import { connect } from "react-redux";
 import authSelectors from "../../redux/selectors/authSelectors";
 
@@ -12,7 +12,6 @@ const PrivatRoute = ({
   <Route
     {...routeProps}
     render={(props) => {
-      // const {isAuttenticated} = authSelectors;
       return isAuthenticated ? (
         <Component {...props} />
       ) : (
