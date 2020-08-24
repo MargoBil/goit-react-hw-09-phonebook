@@ -1,0 +1,34 @@
+{
+  "files": {
+    "ContactsPage.css": "/goit-react-hw-09-phonebook/static/css/ContactsPage.0caf1e1a.chunk.css",
+    "ContactsPage.js": "/goit-react-hw-09-phonebook/static/js/ContactsPage.020e3e78.chunk.js",
+    "ContactsPage.js.map": "/goit-react-hw-09-phonebook/static/js/ContactsPage.020e3e78.chunk.js.map",
+    "SignInPage.css": "/goit-react-hw-09-phonebook/static/css/SignInPage.db086036.chunk.css",
+    "SignInPage.js": "/goit-react-hw-09-phonebook/static/js/SignInPage.29d6e9c8.chunk.js",
+    "SignInPage.js.map": "/goit-react-hw-09-phonebook/static/js/SignInPage.29d6e9c8.chunk.js.map",
+    "SignUpPage.css": "/goit-react-hw-09-phonebook/static/css/SignUpPage.db086036.chunk.css",
+    "SignUpPage.js": "/goit-react-hw-09-phonebook/static/js/SignUpPage.fc281889.chunk.js",
+    "SignUpPage.js.map": "/goit-react-hw-09-phonebook/static/js/SignUpPage.fc281889.chunk.js.map",
+    "main.css": "/goit-react-hw-09-phonebook/static/css/main.2ecbbf12.chunk.css",
+    "main.js": "/goit-react-hw-09-phonebook/static/js/main.f6e7213b.chunk.js",
+    "main.js.map": "/goit-react-hw-09-phonebook/static/js/main.f6e7213b.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-09-phonebook/static/js/runtime-main.7aed719f.js",
+    "runtime-main.js.map": "/goit-react-hw-09-phonebook/static/js/runtime-main.7aed719f.js.map",
+    "static/js/5.25c30d2b.chunk.js": "/goit-react-hw-09-phonebook/static/js/5.25c30d2b.chunk.js",
+    "static/js/5.25c30d2b.chunk.js.map": "/goit-react-hw-09-phonebook/static/js/5.25c30d2b.chunk.js.map",
+    "index.html": "/goit-react-hw-09-phonebook/index.html",
+    "precache-manifest.d0ef2ad2057b1370193cd2bfc7938f26.js": "/goit-react-hw-09-phonebook/precache-manifest.d0ef2ad2057b1370193cd2bfc7938f26.js",
+    "service-worker.js": "/goit-react-hw-09-phonebook/service-worker.js",
+    "static/css/ContactsPage.0caf1e1a.chunk.css.map": "/goit-react-hw-09-phonebook/static/css/ContactsPage.0caf1e1a.chunk.css.map",
+    "static/css/SignInPage.db086036.chunk.css.map": "/goit-react-hw-09-phonebook/static/css/SignInPage.db086036.chunk.css.map",
+    "static/css/SignUpPage.db086036.chunk.css.map": "/goit-react-hw-09-phonebook/static/css/SignUpPage.db086036.chunk.css.map",
+    "static/css/main.2ecbbf12.chunk.css.map": "/goit-react-hw-09-phonebook/static/css/main.2ecbbf12.chunk.css.map",
+    "static/js/5.25c30d2b.chunk.js.LICENSE.txt": "/goit-react-hw-09-phonebook/static/js/5.25c30d2b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7aed719f.js",
+    "static/js/5.25c30d2b.chunk.js",
+    "static/css/main.2ecbbf12.chunk.css",
+    "static/js/main.f6e7213b.chunk.js"
+  ]
+}
